@@ -1,0 +1,121 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  /* Main Container */
+  div {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Input Fields */
+  input[type="email"],
+  input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  input[type="email"]:focus,
+  input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Success Message */
+  p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #27ae60;
+  }
+  
+  /* Inbox Section */
+  #novu-inbox {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #novu-inbox h2 {
+    color: #2980b9;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  /* Make sure inbox doesn't overflow */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px; /* Add some padding on smaller screens */
+    }
+  
+    .inbox-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    #novu-inbox {
+      width: 100%;
+      max-width: none;
+    }
+  
+    input[type="email"],
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  
