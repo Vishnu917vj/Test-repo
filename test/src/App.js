@@ -17,7 +17,7 @@ const App = () => {
   // Send default notification to the backend
   const sendDefaultNotification = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/trigger-default-notification', {
+      const response = await fetch('https://test-repo-p3w2.onrender.com/api/trigger-default-notification', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const App = () => {
   // Send custom notification to the backend
   const sendCustomNotification = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/trigger-custom-notification', {
+      const response = await fetch('https://test-repo-p3w2.onrender.com/api/trigger-custom-notification', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
