@@ -66,7 +66,7 @@ const App = () => {
       const result = await response.json();
       if (result.success) {
         setIsNotified(true);  // Indicate success
-        alert("scroll down to Inbox and click on bell icon to see notifications ")
+        alert("scroll down to Inbox and click on bell icon to see notifications ");
         setCustomMessage('');  // Clear the custom message field
         setEmail('');  // Clear the email field
       } else {
