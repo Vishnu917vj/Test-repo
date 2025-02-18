@@ -98,7 +98,7 @@ const App = () => {
       {/* Default notification */}
       <div>
         <button onClick={sendDefaultNotification}>Send Default Notification</button>
-        {isDefaultNotified && <p>Default Notification sent successfully!</p>}
+        {isDefaultNotified && <p>Notification sent successfully!</p>}
       </div>
       
       {/* Custom Notification Section */}
@@ -123,7 +123,7 @@ const App = () => {
           onChange={(e) => setCustomMessage(e.target.value)}
         />
         <button onClick={sendCustomNotification}>Send Custom Notification</button>
-        {isNotified && <p>Custom Notification sent successfully!</p>}
+        {isNotified && <p>Mail Notification sent successfully!</p>}
       </div>
 
       {/* Novu Inbox */}
