@@ -79,7 +79,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Novu Notification Demo</h1>
+      <h1>Novu Notification Demo (to see notifications scroll down and click on bell icon)</h1>
       <input
           type="text"
           placeholder="Enter Message For In App Notification"
