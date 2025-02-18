@@ -33,7 +33,7 @@ const App = () => {
 
       const result = await response.json();
       if (result.success) {
-  setIsNotified(true);
+  setIsDefaultNotified(true);
   alert("Scroll down to Inbox and click on bell icon to see notifications.");
 } else {
   alert("Notification sending failed.");
