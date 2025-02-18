@@ -66,6 +66,7 @@ const App = () => {
       const result = await response.json();
       if (result.success) {
         setIsNotified(true);  // Indicate success
+        alert("scroll down to Inbox and click on bell icon to see notifications ")
         setCustomMessage('');  // Clear the custom message field
         setEmail('');  // Clear the email field
       } else {
@@ -79,7 +80,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Novu Notification Demo (to see notifications scroll down and click on bell icon)</h1>
+      <h1>Novu Notification Demo </h1>
       <input
           type="text"
           placeholder="Enter Message For In App Notification"
