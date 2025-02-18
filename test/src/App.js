@@ -82,13 +82,13 @@ const App = () => {
       <h1>Novu Notification Demo</h1>
       <input
           type="text"
-          placeholder="Enter Message For Notification"
+          placeholder="Enter Message For In App Notification"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Enter Subject For Notification"
+          placeholder="Enter Subject For In App Notification"
           value={messageSubject}
           onChange={(e) => setMessageSubject(e.target.value)}
         />
@@ -100,7 +100,7 @@ const App = () => {
       
       {/* Custom Notification Section */}
       <div>
-        <h2>Send Custom Notification</h2>
+        <h2>Send Mail Notification</h2>
         <input
           type="email"
           placeholder="Enter recipient email"
